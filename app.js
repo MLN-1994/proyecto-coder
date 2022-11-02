@@ -1,4 +1,5 @@
 
+
  const productos  = [
  {
      id: 0,
@@ -55,7 +56,7 @@ const filtrar = () => {
     for(let producto of productos){
         let nombre = producto.nombre.toLowerCase()
         if(nombre.indexOf(text) !== -1){
-            console.log(producto.nombre + " tenemos, y cuesta " + producto.precio);
+            console.log(producto.nombre + " tenemos, y cuesta $ " + producto.precio);
         }else{
             console.log("el producto no existe")
         }
